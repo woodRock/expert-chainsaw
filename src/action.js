@@ -28,9 +28,6 @@ async function run() {
     ${input}
     ${after}`;
   fs.writeFileSync(FILE_NAME, editedReadme.trim());
-  console.log("before\n" + before);
-  console.log("input\n" + input);
-  console.log("after\n" + after);
 }
 
 try {

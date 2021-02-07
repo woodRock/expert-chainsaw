@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: "📥  Fetching Repository Contents"
         uses: actions/checkout@main
-      - name: "Fetching Weather Forecase"
+      - name: "🌨️ Fetching Weather Forecast"
         uses: ./
         with:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
