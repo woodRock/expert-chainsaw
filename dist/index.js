@@ -2084,6 +2084,7 @@ async function run() {
     ${before}
     ${input}
     ${after}`;
+  console.log(input);
   fs.writeFileSync(FILE_NAME, editedReadme.trim());
 }
 
