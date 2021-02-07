@@ -10,7 +10,7 @@ jobs:
     name: "Update Blogs"
     runs-on: ubuntu-latest
     steps:
-      - name: "📥  Fetching Repository Contents"
+      - name: "📥 Fetching Repository Contents"
         uses: actions/checkout@main
       - name: "🌨️ Fetching Weather Forecast"
         uses: ./
@@ -18,3 +18,7 @@ jobs:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           OPEN_WEATHER_TOKEN: ${{secrets.OPEN_WEATHER_TOKEN}}
           CITY: "Wellington, New Zealand"
+      - name: "🛠️ Push changes to GitHub"
+        run:
+          - git config --global user.email j.r.h.wood98@gmail.com && git config --global user.name woodrock;
+          - git diff --quiet && git diff --staged --quiet || git commit -am '[BOT] Update Readme' && git push;
