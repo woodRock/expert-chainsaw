@@ -4,16 +4,16 @@ const core = require("@actions/core");
 
 const FILE_NAME = "./README.md";
 const ENCODING = "utf8";
-const TAG_OPEN = `<!--- FEED-START -->`;
-const TAG_CLOSE = `<!--- FEED-END --->`;
+const TAG_OPEN = `<!-- FEED-START -->`;
+const TAG_CLOSE = `<!-- FEED-END -->`;
 
 async function fetchWeather() {
   const API_KEY = core.getInput("OPEN_WEATHER_TOKEN");
   const city = "Wellington,New Zealand";
   const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&mode=html`;
-  const weather = await fetch(URL);
-  const weatherText = await articles.text();
-  return weatherText;
+  return fetch(URL)
+    .then((response) => response.text())
+    .then((html) => html);
 }
 
 async function run() {
@@ -22,7 +22,7 @@ async function run() {
   const indexAfter = readme.indexOf(TAG_CLOSE);
   const before = readme.substring(0, indexBefore);
   const after = readme.substring(indexAfter);
-  const input = fetchWeather();
+  const input = await fetchWeather();
   const editedReadme = `
     ${before}
     ${input}
