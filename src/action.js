@@ -9,7 +9,7 @@ const TAG_CLOSE = `<!-- FEED-END -->`;
 
 async function fetchWeather() {
   const API_KEY = core.getInput("OPEN_WEATHER_TOKEN");
-  const city = "Wellington,New Zealand";
+  const city = core.getInput("CITY");
   const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&mode=html`;
   return fetch(URL)
     .then((response) => response.text())
@@ -23,12 +23,12 @@ async function run() {
   const before = readme.substring(0, indexBefore);
   const after = readme.substring(indexAfter);
   const input = await fetchWeather();
-  const editedReadme = `
-    ${before}
-    ${input}
-    ${after}`;
-  console.log(input);
-  fs.writeFileSync(FILE_NAME, editedReadme.trim());
+  const edited = `
+${before}
+${input}
+${after}`;
+  fs.writeFileSync(FILE_NAME, edited.trim());
+  console.log(edited);
 }
 
 try {

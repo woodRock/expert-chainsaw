@@ -17,3 +17,4 @@ jobs:
         with:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           OPEN_WEATHER_TOKEN: ${{secrets.OPEN_WEATHER_TOKEN}}
+          CITY: "Wellington, New Zealand"

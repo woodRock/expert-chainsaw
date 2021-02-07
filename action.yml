@@ -9,6 +9,9 @@ inputs:
   OPEN_WEATHER_TOKEN:
     description: "Open Weather API Token"
     required: true
+  CITY:
+    description: "City to get forecast for"
+    required: true
 
 runs:
   using: "node12"
