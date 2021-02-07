@@ -1665,11 +1665,30 @@ exports.FetchError = FetchError;
 const fetch = __nccwpck_require__(467);
 const fs = __nccwpck_require__(747);
 
+const FILE_NAME = "./README.md";
+const ENCODING = "UTF8";
+const TAG_OPEN = `<!--- FEED-START -->`;
+const TAG_CLOSE = `<!--- FEED-END --->`;
+
 async function run() {
-  console.log("Hello, World!");
+  const readme = fs.readFileSync(FILE_NAME, ENCODING);
+  const indexBefore = readme.indexOf(TAG_OPEN) + TAG_OPEN.length;
+  const indexAfter = readme.indexOf(TAG_CLOSE);
+  const before = readme.substring(0, indexBefore);
+  const after = readme.substring(indexAfter);
+  const input = "Hello, World!";
+  const editedReadme = `
+    ${before}
+    ${input}
+    ${after}`;
+  fs.writeFileSync(FILE_NAME, editedReadme.trim());
 }
 
-run();
+try {
+  run();
+} catch (error) {
+  console.log(error);
+}
 
 
 /***/ }),
