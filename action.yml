@@ -1,5 +1,5 @@
 name: "Weather Forecast Action"
-desscription: "Display weather forcast for any area in a project README"
+description: "Display weather forcast for any area in a project README"
 author: "woodrock"
 
 inputs:
