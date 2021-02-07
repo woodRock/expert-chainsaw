@@ -22,7 +22,7 @@ async function run() {
   const indexAfter = readme.indexOf(TAG_CLOSE);
   const before = readme.substring(0, indexBefore);
   const after = readme.substring(indexAfter);
-  const input = await fetchWeather();
+  const input = (await fetchWeather()).replace(/<script.*>.*<\/script>/ims, "");
   const edited = `
 ${before}
 ${input}
