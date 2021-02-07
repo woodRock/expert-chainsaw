@@ -2,7 +2,7 @@ const fetch = require("node-fetch");
 const fs = require("fs");
 
 const FILE_NAME = "./README.md";
-const ENCODING = "UTF8";
+const ENCODING = "utf8";
 const TAG_OPEN = `<!--- FEED-START -->`;
 const TAG_CLOSE = `<!--- FEED-END --->`;
 
@@ -18,6 +18,7 @@ async function run() {
     ${input}
     ${after}`;
   fs.writeFileSync(FILE_NAME, editedReadme.trim());
+  console.log(input);
 }
 
 try {
