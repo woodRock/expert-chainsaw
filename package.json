@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/woodRock/expert-chainsaw#readme",
   "dependencies": {
+    "@actions/core": "^1.2.6",
     "@vercel/ncc": "^0.27.0",
     "fs": "0.0.1-security",
     "node-fetch": "^2.6.1"
