@@ -1,0 +1,25 @@
+{
+  "name": "expert-chainsaw",
+  "version": "1.0.0",
+  "description": "<!-- FEED-START --> <!-- FEED-END -->",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build src/action.js -o dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woodRock/expert-chainsaw.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/woodRock/expert-chainsaw/issues"
+  },
+  "homepage": "https://github.com/woodRock/expert-chainsaw#readme",
+  "dependencies": {
+    "@vercel/ncc": "^0.27.0",
+    "fs": "0.0.1-security",
+    "node-fetch": "^2.6.1"
+  }
+}

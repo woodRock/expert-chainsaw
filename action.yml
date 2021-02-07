@@ -1,0 +1,15 @@
+name: "Weather Forecast Action"
+desscription: "Display weather forcast for any area in a project README"
+author: "woodrock"
+
+inputs:
+  GITHUB_TOKEN:
+    description: "GitHub token"
+    required: true
+  OPEN_WEATHER_TOKEN:
+    description: "Open Weather API Token"
+    required: true
+
+runs:
+  using: "node12"
+  main: "dist/index.js"

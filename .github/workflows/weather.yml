@@ -1,0 +1,19 @@
+name: "Weather"
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/30 * * * *" # Runs every 30 minutes
+
+jobs:
+  update_blogs:
+    name: "Update Blogs"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "📥  Fetching Repository Contents"
+        uses: actions/checkout@main
+      - name: "Fetching Weather Forecase"
+        uses: ./
+        with:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          OPEN_WEATHER_TOKEN: ${{secrets.OPEN_WEATHER_TOKEN}}
