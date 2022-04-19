@@ -29,8 +29,8 @@ This GitHub Action used the [Open Weather API](https://openweathermap.org/api) t
       </div>
     </div>
     <div style="display: block; clear: left; font-size: small;">Clouds: 75%</div>
-    <div style="display: block; clear: left; color: gray; font-size: x-small;" >Humidity: 94%</div>
-    <div style="display: block; clear: left; color: gray; font-size: x-small;" >Wind: 4.12 m/s</div>
+    <div style="display: block; clear: left; color: gray; font-size: x-small;" >Humidity: 93%</div>
+    <div style="display: block; clear: left; color: gray; font-size: x-small;" >Wind: 2.57 m/s</div>
     <div style="display: block; clear: left; color: gray; font-size: x-small;" >Pressure: 1021hpa</div>
   </div>
   <div style="display: block; clear: left; color: gray; font-size: x-small;">
