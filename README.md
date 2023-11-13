@@ -24,12 +24,12 @@ This GitHub Action used the [Open Weather API](https://openweathermap.org/api) t
         <img height="45" width="45" style="border: medium none; width: 45px; height: 45px; background: url(&quot;http://openweathermap.org/img/w/02d.png&quot;) repeat scroll 0% 0% transparent;" alt="title" src="http://openweathermap.org/images/transparent.png"/>
       </div>
       <div style="float: left;">
-        <div style="display: block; clear: left; font-size: medium; font-weight: bold; padding: 0pt 3pt;" title="Current Temperature">15.99°C</div>
+        <div style="display: block; clear: left; font-size: medium; font-weight: bold; padding: 0pt 3pt;" title="Current Temperature">16.23°C</div>
         <div style="display: block; width: 85px; overflow: visible;"></div>
       </div>
     </div>
     <div style="display: block; clear: left; font-size: small;">Clouds: 20%</div>
-    <div style="display: block; clear: left; color: gray; font-size: x-small;" >Humidity: 81%</div>
+    <div style="display: block; clear: left; color: gray; font-size: x-small;" >Humidity: 79%</div>
     <div style="display: block; clear: left; color: gray; font-size: x-small;" >Wind: 12.35 m/s</div>
     <div style="display: block; clear: left; color: gray; font-size: x-small;" >Pressure: 1008hPa</div>
   </div>
