@@ -21,16 +21,16 @@ This GitHub Action used the [Open Weather API](https://openweathermap.org/api) t
   <div style="float: left; width: 130px;">
     <div style="display: block; clear: left;">
       <div style="float: left;" title="Titel">
-        <img height="45" width="45" style="border: medium none; width: 45px; height: 45px; background: url(&quot;http://openweathermap.org/img/w/04d.png&quot;) repeat scroll 0% 0% transparent;" alt="title" src="http://openweathermap.org/images/transparent.png"/>
+        <img height="45" width="45" style="border: medium none; width: 45px; height: 45px; background: url(&quot;http://openweathermap.org/img/w/10d.png&quot;) repeat scroll 0% 0% transparent;" alt="title" src="http://openweathermap.org/images/transparent.png"/>
       </div>
       <div style="float: left;">
-        <div style="display: block; clear: left; font-size: medium; font-weight: bold; padding: 0pt 3pt;" title="Current Temperature">19.72°C</div>
+        <div style="display: block; clear: left; font-size: medium; font-weight: bold; padding: 0pt 3pt;" title="Current Temperature">19.99°C</div>
         <div style="display: block; width: 85px; overflow: visible;"></div>
       </div>
     </div>
     <div style="display: block; clear: left; font-size: small;">Clouds: 100%</div>
-    <div style="display: block; clear: left; color: gray; font-size: x-small;" >Humidity: 95%</div>
-    <div style="display: block; clear: left; color: gray; font-size: x-small;" >Wind: 8.75 m/s</div>
+    <div style="display: block; clear: left; color: gray; font-size: x-small;" >Humidity: 91%</div>
+    <div style="display: block; clear: left; color: gray; font-size: x-small;" >Wind: 8.23 m/s</div>
     <div style="display: block; clear: left; color: gray; font-size: x-small;" >Pressure: 1011hPa</div>
   </div>
   <div style="display: block; clear: left; color: gray; font-size: x-small;">
