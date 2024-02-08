@@ -24,13 +24,13 @@ This GitHub Action used the [Open Weather API](https://openweathermap.org/api) t
         <img height="45" width="45" style="border: medium none; width: 45px; height: 45px; background: url(&quot;http://openweathermap.org/img/w/04n.png&quot;) repeat scroll 0% 0% transparent;" alt="title" src="http://openweathermap.org/images/transparent.png"/>
       </div>
       <div style="float: left;">
-        <div style="display: block; clear: left; font-size: medium; font-weight: bold; padding: 0pt 3pt;" title="Current Temperature">16.44°C</div>
+        <div style="display: block; clear: left; font-size: medium; font-weight: bold; padding: 0pt 3pt;" title="Current Temperature">16.63°C</div>
         <div style="display: block; width: 85px; overflow: visible;"></div>
       </div>
     </div>
     <div style="display: block; clear: left; font-size: small;">Clouds: 100%</div>
-    <div style="display: block; clear: left; color: gray; font-size: x-small;" >Humidity: 72%</div>
-    <div style="display: block; clear: left; color: gray; font-size: x-small;" >Wind: 9.26 m/s</div>
+    <div style="display: block; clear: left; color: gray; font-size: x-small;" >Humidity: 76%</div>
+    <div style="display: block; clear: left; color: gray; font-size: x-small;" >Wind: 7.72 m/s</div>
     <div style="display: block; clear: left; color: gray; font-size: x-small;" >Pressure: 1021hPa</div>
   </div>
   <div style="display: block; clear: left; color: gray; font-size: x-small;">
